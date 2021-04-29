@@ -13,13 +13,6 @@ public class Phonebook {
             throw new IllegalArgumentException();
         }
 
-        /*Path directory = Path.of("phonebookOutput");
-        try {
-            Files.createDirectory(directory);
-        } catch (IOException ioe) {
-            throw new IllegalArgumentException("Can't create directory", ioe);
-        }
-*/
         Path textFile = Path.of(output);
 
         try (BufferedWriter writer = Files.newBufferedWriter(textFile)) {
